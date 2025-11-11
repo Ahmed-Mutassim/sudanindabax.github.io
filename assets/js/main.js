@@ -94,4 +94,4 @@ $('#registration-form').submit(function(e){
  * SmoothScroll
 */
 
-smoothScroll.init();
+if (window.smoothScroll && smoothScroll.init) { smoothScroll.init(); }
