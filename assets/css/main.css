@@ -323,7 +323,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/old_ix_sd_photos/11.jpg) no-repeat center center/cover;
+  background: url(../images/images2025/IndabaXSudanProspectusLast_page-0001.jpg) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {
@@ -387,10 +387,66 @@ ul li {
  * 6.1 Section: About 
  */
 .about .section-title {
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 .about figure {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+/* Left-align about section content (heading and paragraphs) */
+.about .section-title {
+  text-align: left;
+}
+.about .col-sm-6, .about .about-text {
+  text-align: left;
+}
+
+/* Remove extra spacing between the two about paragraphs */
+.about .col-sm-6 p {
+  margin-bottom: 0;
+}
+
+/* Ensure the about text vertically centers next to the image and has consistent spacing */
+.about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center the paragraph content to align with the image */
+}
+.about .about-text p {
+  margin-bottom: 10px; /* reduced spacing so paragraphs align more tightly with the image */
+}
+
+/* Center the About heading under the image horizontally within the left column */
+.about .about-text h3.section-title.multiple-title {
+  align-self: center;
+  text-align: center; /* center the heading text itself */
+}
+
+/* On larger screens, make the about row a flex container so both columns stretch equally.
+   This allows the image to fill the left column's height and visually match the paragraphs. */
+@media (min-width: 768px) {
+  .about .row {
+    display: flex;
+    align-items: stretch; /* make columns equal height */
+  }
+
+  .about figure {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .about figure img {
+    width: 100%;
+    height: 100%; /* fill the column height */
+    object-fit: cover; /* crop/scale to keep visual balance */
+    display: block;
+  }
+
+  /* ensure text column vertically centers within the row height */
+  .about .about-text {
+    justify-content: center;
+  }
 }
 
 /* 
@@ -429,6 +485,21 @@ ul li {
   width: 100%;
   height: 300px; /* Set the desired fixed height */
   object-fit: cover; /* This ensures the image covers the area while maintaining aspect ratio */
+}
+
+/* Compact thumbnail for Speakers section (prospectus preview) */
+.speakers-thumb img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: inline-block;
+}
+.speakers-thumb { display:flex; align-items:center; justify-content:center; }
+
+@media (max-width: 767px) {
+  .speakers-thumb { margin-top: 15px; }
+  .speakers-thumb img { max-width: 140px; }
 }
 
 /* 
