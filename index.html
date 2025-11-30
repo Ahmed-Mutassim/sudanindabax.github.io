@@ -106,35 +106,29 @@
         </div><!-- /.container -->
     </section>
 
-    <section id="facts" class="section bg-image-1 facts text-center">
-            <div class="row">
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-calendar"></i>
-                    <h3>2025<br>Dec 10th </h3>
-                
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-location"></i>
-                    <h3>Virtually</h3>
-                
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-pricetags"></i>
-                    <h3>250+<br>Attendees</h3>
-                
-                </div>
-                <div class="col-sm-3">
-                
-                    <i class="ion-speakerphone"></i>
-                    <h3>10+<br>Speakers</h3>
-                
-                </div>
-            </div><!-- row -->
-        </div><!-- container -->
-    </section>
+<!-- NEW CORRECTED CODE -->
+<section id="facts" class="section bg-image-1 facts text-center">
+    <div class="container"> <!-- Added Container -->
+        <div class="row">
+            <div class="col-sm-3">
+                <i class="ion-ios-calendar"></i>
+                <h3>2025<br>Dec 10th </h3>
+            </div>
+            <div class="col-sm-3">
+                <i class="ion-ios-location"></i>
+                <h3>Virtually</h3>
+            </div>
+            <div class="col-sm-3">
+                <i class="ion-pricetags"></i>
+                <h3>250+<br>Attendees</h3>
+            </div>
+            <div class="col-sm-3">
+                <i class="ion-speakerphone"></i>
+                <h3>10+<br>Speakers</h3>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
 
     <section id="speakers" class="section speakers">
         <div class="container">
@@ -198,21 +192,105 @@
     </section>
     
     
-    <section id="schedule" class="section schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <h3 class="section-title">Stay Tuned for the event schedule!</h3>
-                    <p class="font-300">We are finalizing the schedule. Check back soon for full program, session times, and workshop details.</p>
+<!-- index.html - Replace content inside <section id="schedule"> -->
+<section id="schedule" class="section schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="section-title">Event Schedule</h3>
+                <p class="font-300">Join us for five days of AI exploration. See event schedule below.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Nav Tabs -->
+                <div class="schedule-tabs-wrapper">
+                    <ul class="nav nav-tabs custom-tabs" role="tablist">
+                        <!-- Day 1 -->
+                        <li role="presentation" class="active">
+                            <a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">
+                                <span class="day-title">Day 1</span>
+                                <span class="day-desc">Workshops</span>
+                            </a>
+                        </li>
+                        <!-- Day 2 -->
+                        <li role="presentation">
+                            <a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">
+                                <span class="day-title">Day 2</span>
+                                <span class="day-desc">Workshops</span>
+                            </a>
+                        </li>
+                        <!-- Day 3 -->
+                        <li role="presentation">
+                            <a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">
+                                <span class="day-title">Day 3</span>
+                                <span class="day-desc">Workshops</span>
+                            </a>
+                        </li>
+                        <!-- Day 4 -->
+                        <li role="presentation">
+                            <a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">
+                                <span class="day-title">Day 4</span>
+                                <span class="day-desc">Conference</span>
+                            </a>
+                        </li>
+                        <!-- Day 5 -->
+                        <li role="presentation">
+                            <a href="#day5" aria-controls="day5" role="tab" data-toggle="tab">
+                                <span class="day-title">Day 5</span>
+                                <span class="day-desc">Conference</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-3 text-center schedule-thumb">
-                    <a href="assets/images/images2025/IndabaXSudanProspectusLast_page-0009.jpg" data-lightbox="schedule-thumb" data-title="IndabaXSudan Prospectus - Schedule Preview">
-                        <img src="assets/images/images2025/IndabaXSudanProspectusLast_page-0009.jpg" alt="Schedule thumbnail" class="img-responsive">
-                    </a>
+
+                <!-- Tab Panes (The Content) -->
+                <div class="tab-content schedule-content">
+                    
+                    <!-- Day 1 Content -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="day1">
+                        <h4>Day 1: Tutorials & Practicals</h4>
+                        <p>Detailed schedule for Day 1 goes here...</p>
+                        <!-- Example Item -->
+                        <div class="schedule-item">
+                            <div class="time">09:00 - 10:30</div>
+                            <div class="details">
+                                <h3>Opening Ceremony</h3>
+                                <p>Welcome address and introduction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Content -->
+                    <div role="tabpanel" class="tab-pane fade" id="day2">
+                        <h4>Day 2: Tutorials & Practicals</h4>
+                        <p>Detailed schedule for Day 2 goes here...</p>
+                    </div>
+
+                    <!-- Day 3 Content -->
+                    <div role="tabpanel" class="tab-pane fade" id="day3">
+                        <h4>Day 3: Break the System (Hackathon)</h4>
+                        <p>Detailed schedule for Day 3 goes here...</p>
+                    </div>
+
+                    <!-- Day 4 Content -->
+                    <div role="tabpanel" class="tab-pane fade" id="day4">
+                        <h4>Day 4: Workshops</h4>
+                        <p>Detailed schedule for Day 4 goes here...</p>
+                    </div>
+
+                    <!-- Day 5 Content -->
+                    <div role="tabpanel" class="tab-pane fade" id="day5">
+                        <h4>Day 5: Conference</h4>
+                        <p>Detailed schedule for Day 5 goes here...</p>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     
     <section id="testimonials" class="section testimonials">
@@ -344,72 +422,116 @@
 
 
 
-    <section id="gallery" class="section gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Previous IndabaX Events!</h3>
-                </div>
+<!-- index.html -->
+<section id="gallery" class="section gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="section-title">Previous IndabaX Events</h3>
+                <p class="font-300">Check our gallery from recent events</p>
             </div>
-            <div class="row">
-                <!-- First Image -->
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/6.jpg" data-lightbox="event-gallery" data-title="Event Photo 1">
-                        <img src="assets/images/old_ix_sd_photos/6.jpg" alt="Event Photo 1" class="img-responsive img-thumbnail">
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- Bootstrap Carousel -->
+                <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- Indicators (Dots) - Now 9 dots -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="1"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="2"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="3"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="4"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="5"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="6"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="7"></li>
+                        <li data-target="#galleryCarousel" data-slide-to="8"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        
+                        <!-- Slide 1 -->
+                        <div class="item active">
+                            <a href="assets/images/old_ix_sd_photos/1.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/1.jpg" alt="Event Photo 1">
+                            </a>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/2.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/2.jpg" alt="Event Photo 2">
+                            </a>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/3.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/3.jpg" alt="Event Photo 3">
+                            </a>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/4.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/4.jpg" alt="Event Photo 4">
+                            </a>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/5.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/5.jpg" alt="Event Photo 5">
+                            </a>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/6.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/6.jpg" alt="Event Photo 6">
+                            </a>
+                        </div>
+
+                        <!-- Slide 7 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/7.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/7.jpg" alt="Event Photo 7">
+                            </a>
+                        </div>
+
+                        <!-- Slide 8 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/8.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/8.jpg" alt="Event Photo 8">
+                            </a>
+                        </div>
+
+                        <!-- Slide 9 -->
+                        <div class="item">
+                            <a href="assets/images/old_ix_sd_photos/9.jpg" data-lightbox="gallery-set">
+                                <img src="assets/images/old_ix_sd_photos/9.jpg" alt="Event Photo 9">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls (Arrows) -->
+                    <a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                </div>
-                <!-- Second Image -->
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/8.jpg" data-lightbox="event-gallery" data-title="Event Photo 2">
-                        <img src="assets/images/old_ix_sd_photos/8.jpg" alt="Event Photo 2" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-                <!-- Third Image -->
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/3.jpg" data-lightbox="event-gallery" data-title="Event Photo 3">
-                        <img src="assets/images/old_ix_sd_photos/3.jpg" alt="Event Photo 3" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-            </div>
-    
-            <div class="row">
-                <!-- More images as necessary -->
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/1.jpg" data-lightbox="event-gallery" data-title="Event Photo 4">
-                        <img src="assets/images/old_ix_sd_photos/1.jpg" alt="Event Photo 4" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/5.jpg" data-lightbox="event-gallery" data-title="Event Photo 5">
-                        <img src="assets/images/old_ix_sd_photos/5.jpg" alt="Event Photo 5" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/6.jpg" data-lightbox="event-gallery" data-title="Event Photo 6">
-                        <img src="assets/images/old_ix_sd_photos/6.jpg" alt="Event Photo 6" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <!-- More images as necessary -->
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/4.jpg" data-lightbox="event-gallery" data-title="Event Photo 4">
-                        <img src="assets/images/old_ix_sd_photos/4.jpg" alt="Event Photo 4" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/9.jpg" data-lightbox="event-gallery" data-title="Event Photo 5">
-                        <img src="assets/images/old_ix_sd_photos/9.jpg" alt="Event Photo 5" class="img-responsive img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="assets/images/old_ix_sd_photos/10.jpg" data-lightbox="event-gallery" data-title="Event Photo 6">
-                        <img src="assets/images/old_ix_sd_photos/10.jpg" alt="Event Photo 6" class="img-responsive img-thumbnail">
+                    <a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     
     <section id="contribution" class="section bg-image-2 contribution">
         <div class="container">
@@ -437,7 +559,7 @@
                     </address>
                 </div>
                 <div class="col-sm-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6847.180871943322!2d32.572713161697216!3d15.599648992977636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e931c803051c1%3A0x53b0c1d6cd8dcd6b!2sNTC%20Tower!5e0!3m2!1sen!2srw!4v1756718627361!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6847.180871943322!2d32.572713161697216!3d15.599648992977636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e931c803051c1%3A0x53b0c1d6cd8dcd6b!2sNTC%20Tower!5e0!3m2!1sen!2srw!4v1756718627361!5m2!1sen!2srw" width="100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
