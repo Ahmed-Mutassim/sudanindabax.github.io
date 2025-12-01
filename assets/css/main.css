@@ -337,7 +337,7 @@ ul li {
   position: relative;
   text-align: center;
   /* Desktop Image */
-  background: url(../images/ixsdlg.jpg) no-repeat center center scroll; 
+  background: url(../images/IndabaXsudan2025Background.png) no-repeat center center scroll; 
   background-size: cover;
   display: table;
 }
@@ -350,13 +350,15 @@ ul li {
        B. NO INTERFERENCE: Using 'background' shorthand resets EVERYTHING 
           (image, position, repeat, attachment) so no desktop styles bleed through.
     */
-    background: url(../images/ixsdlgmob.png) no-repeat center top !important;
+    background: url(../images/IndabaXsudan2025BackgroundMobile.jpg) no-repeat center top !important;
+    background-position: center center !important;
     
     /* 
        C. SIZE: Use 'cover' to fill the screen, or '100% 100%' to stretch it exactly.
        Since this is a custom mobile image, 'cover' is usually best.
     */
     background-size: cover !important;
+    background-repeat:no-repeat !important;
     
     /* D. HEIGHT: Ensure the container is tall enough */
     min-height: 100vh;
@@ -415,13 +417,12 @@ ul li {
   font-weight: 300;
 }
 
-/* assets/css/main.css */
 
 /* Move the "Apply to attend" text and Register button down */
 .site-header .intro h1 {
     /* Adjust this value to move it further down. 
        20vh means "20% of the screen height" */
-    margin-top: 30vh; 
+    margin-top: 20vh; 
     
     /* Optional: Ensure there is space between the text and the button */
     margin-bottom: 30px; 
@@ -434,7 +435,6 @@ ul li {
     }
 }
 
-/* assets/css/main.css */
 
 /* Push the Date text (H2) down so it doesn't touch the navbar */
 .site-header .intro h2 {
@@ -615,6 +615,22 @@ ul li {
   padding: 10px;
   border-radius: 5px;
   margin: 0 5px;
+}
+
+/* assets/css/main.css */
+
+/* 1. Push the Countdown DOWN */
+#countdown {
+    /* Increase this value to move it lower. 
+       15vh means "15% of the screen height" */
+    margin-top: 20vh !important; 
+}
+
+/* 2. Pull the "Apply to attend" text BACK UP */
+/* We reduce the margin here so the button doesn't get pushed off the screen */
+.site-header .intro h1 {
+    /* Reduced from the previous 20vh/30vh to 5vh */
+    margin-top: 5vh !important; 
 }
 
 
@@ -1054,7 +1070,6 @@ iframe {
   }
 }
 
-/* assets/css/main.css */
 
 /* Force navbar to scroll with the page */
 
@@ -1176,3 +1191,126 @@ iframe {
     }
 }
 
+
+/* --- ABOUT SECTION HERO (IndabaX Uganda Style) --- */
+
+.about-hero-wrapper {
+    position: relative;
+    width: 100%;
+    /* Update path if your image is in a different folder */
+    background-image: url('../images/AboutTheme.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0; /* Creates height */
+    margin-bottom: 60px; /* Space between this and your old content */
+    color: #fff;
+    text-align: left; /* Default text alignment */
+}
+
+/* The Dark Overlay */
+.about-hero-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark Blue-ish overlay like the reference */
+    background: rgba(10, 20, 50, 0.85); 
+    z-index: 1;
+}
+
+/* Ensure content sits ON TOP of the overlay */
+.about-hero-wrapper .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Typography Styles */
+.hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+.hero-label {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff; /* or match your theme color like #ff6600 */
+    margin-bottom: 15px;
+    border-left: 4px solid #fff; /* Small decorative line on left */
+    padding-left: 15px;
+}
+
+.hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Margin top for the columns */
+.mt-content {
+    margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    .about-hero-wrapper {
+        padding: 60px 0;
+    }
+    .col-md-6 {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Move the About Title down to reveal background image text */
+.hero-title {
+    /* Adjust this number: higher number = moves further down */
+    margin-top: 150px; 
+}
+
+/* On Mobile: Move it down less so it fits on screen */
+@media (max-width: 768px) {
+    .hero-title {
+        margin-top: 80px;
+    }
+}
+
+
+/* 1. Reduce the height of the main wrapper */
+.about-hero-wrapper {
+    /* Reduced from 100px to 40px to make it much shorter */
+    padding: 40px 0 !important; 
+}
+
+/* 2. Reduce space between the Main Title and the 2 Columns below it */
+.mt-content {
+    /* Reduced from 40px to 20px */
+    margin-top: 20px !important; 
+}
+
+/* 3. Reduce space below the subtitle */
+.hero-subtitle {
+    /* Reduced from 40px to 10px */
+    margin-bottom: 10px !important; 
+}
+
+
+/* Remove ONLY the top spacing of the About section to close the gap */
+#about {
+    padding-top: 0 !important;
+}

@@ -10,19 +10,21 @@ var timer = setInterval(function () {
   
     var countdownEl = document.getElementById("countdown");
 
+    // --- THIS IS THE UPDATE ---
     if (distance <= 0) {
       clearInterval(timer);
-      countdownEl.innerHTML = '<span class="expired">The Event Has Started!</span>';
+      // This hides the element completely from the screen
+      countdownEl.style.display = "none"; 
       return;
     }
+    // --------------------------
   
     var days    = Math.floor(distance / (1000*60*60*24));
     var hours   = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
     var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
     var seconds = Math.floor((distance % (1000*60)) / 1000);
   
-    // Re-write the HTML to be clean and responsive
-    // We use short labels (d, h, m, s) on mobile if needed, or just small font
+    // Generate the HTML for the boxes
     countdownEl.innerHTML = 
         '<div class="time-box"><span class="num">' + days + '</span><span class="label">Days</span></div>' +
         '<div class="time-box"><span class="num">' + hours + '</span><span class="label">Hours</span></div>' +
